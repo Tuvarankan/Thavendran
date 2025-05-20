@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   
+    <title>Contact - Sanaya Bio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+    
+    <h3>Contact</h3>
+    <form action="contact.php" method="POST">
+        <label>Civilité</label>
+        <br>
+        <input type="radio" name="civilite" value="Mlle"> Mlle
+        <input type="radio" name="civilite" value="Mme"> Mme
+        <input type="radio" name="civilite" value="M."> M.
+        <br>
+        <br>
+
+        <label>Nom</label>
+        <br>
+        <input type="text" name="nom">
+        <br>
+
+        <label>Prénom</label><br>
+        <input type="text" name="prenom">
+        <br>
+
+        <label>Numéro</label><br>
+        <input type="tel" name="numero">
+        <br>
+
+        <label>Email</label>
+        <br>
+        <input type="email" name="email">
+        <br>
+        <br>
+
+        <label>Raison</label>
+        <br>
+        <input type="checkbox" name="raison[]" value="Renseignement"> Renseignement
+        <input type="checkbox" name="raison[]" value="Réclamation"> Réclamation
+        <input type="checkbox" name="raison[]" value="Commande"> Commande
+        <br>
+        <br>
+
+        <label>Mode de réponse</label>
+        <br>
+        <input type="checkbox" name="reponse[]" value="email"> Email
+        <input type="checkbox" name="reponse[]" value="sms"> SMS
+        <input type="checkbox" name="reponse[]" value="telephone"> Téléphone
+        <br>
+        <br>
+
+        <label>Date de rappel (si téléphone)</label>
+        <br>
+        <input type="date" name="date_tel">
+        <br>
+        <br>
+
+        <label>Message complémentaire</label>
+        <br>
+        <textarea name="message" rows="4" cols="50"></textarea>
+        <br>
+        <br>
+
+        <button type="submit">Valider</button>
+    </form>
+</body>
+</html>
