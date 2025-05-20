@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Sanaya Bio</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+		
+		<fieldset>
+			<legend>Produits par catégorie</legend>
+
+			<form action="getProduits.php" method="GET" >
+
+				<label>Catégorie :</label>
+				<br/>
+				<select name="categorie" size="4">
+					<option value="hl-ess" selected>Huiles Essentielles</option>
+					<option value="mcrt-hlx">Macérâts Huileux</option>
+					<option value="ext-plnt">Extraits de Plantes</option>
+					<option value="argl">Argiles</option>
+			    </select>
+				
+				<input type="submit" value="Valider" />
+				<input type="reset" value="Réinitialiser" />
+
+			</form>
+
+
+		</fieldset>
+		
+	</body>
+	
+</html>
